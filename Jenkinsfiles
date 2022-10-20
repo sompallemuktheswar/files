@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git branch: 'main', url: 'git@github.com:sompallemuktheswar/jenkinsfile.git'
+                git branch: 'main', url: 'git@github.com:sompallemuktheswar/files.git'
             }
         }
         stage('ECR login') {
