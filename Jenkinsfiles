@@ -20,7 +20,7 @@ pipeline {
         }
         stage('push image to ECR Repo') {
             steps {
-              sh  'docker push 121835848081.dkr.ecr.ap-south-1.amazonaws.com/sunny:$BUILD_NUMBER'
+              sh  'sudo docker push 121835848081.dkr.ecr.ap-south-1.amazonaws.com/sunny:$BUILD_NUMBER'
             }
         }
     }
