@@ -15,7 +15,7 @@ pipeline {
         }
         stage('build image ') {
             steps {
-               sh 'sudo docker build -t 121835848081.dkr.ecr.ap-south-1.amazonaws.com/sunny:BUILD_NUMBER .'
+               sh 'sudo docker build -t 121835848081.dkr.ecr.ap-south-1.amazonaws.com/sunny:$BUILD_NUMBER .'
             }
         }
         stage('push image to ECR Repo') {
